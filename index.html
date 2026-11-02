@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un mesaj personal despre locul fiecăruia în planul lui Dumnezeu.">
+  <title>It`s your turn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="site-shell">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="glow glow-one" aria-hidden="true"></div>
+    <div class="glow glow-two" aria-hidden="true"></div>
+
+    <section id="name-screen" class="screen active" aria-labelledby="welcome-title">
+      <div class="content">
+        <div class="symbol" aria-hidden="true">✦</div>
+        <p class="eyebrow"></p>
+        <h1 id="welcome-title"></h1>
+
+
+        <form id="name-form" novalidate>
+          <label for="name"></label>
+          <div class="input-wrap">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="given-name"
+              maxlength="40"
+              placeholder="Scrie-ți prenumele..."
+              aria-describedby="name-error"
+              required
+            >
+            <button class="arrow-button" type="submit" aria-label="Continuă">→</button>
+          </div>
+          <p id="name-error" class="error" role="alert"></p>
+        </form>
+
+        <p class="hint">Apasă Enter sau săgeata pentru a continua</p>
+      </div>
+    </section>
+
+    <section id="message-screen" class="screen" aria-labelledby="message-title" aria-hidden="true">
+      <div class="content message-content">
+        <div class="symbol large" aria-hidden="true">✦</div>
+        <p class="eyebrow">PENTRU TINE</p>
+        <h2 id="message-title">It`s your turn, <span id="person-name"></span>, to love like Jesus</h2>
+        <div class="divider" aria-hidden="true"><span></span>✦<span></span></div>
+
+        <button id="restart" class="secondary-button" type="button">← Înapoi</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
