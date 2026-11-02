@@ -73,7 +73,7 @@ button, input { font: inherit; }
 
 .screen {
   width: min(100% - 32px, 760px);
-  min-height: 450px;
+  min-height: auto;
   position: relative;
   z-index: 2;
   display: none;
